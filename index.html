@@ -44,7 +44,7 @@
                 top: 6.5vw;
                 padding: 10px;
                 font-family: Silkscreen;
-                text-shadow: -3px 3px #000000, -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;;
+                text-shadow: -3px 3px black, -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;;
             }
 
             span.carat {
@@ -178,7 +178,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Tom Farro</a>
+                    <a class="navbar-brand" href="#"></a>
                 </div>
                 <div class="collapse navbar-collapse nav-stacked" id="navbar">
                     <h1 id="title" style="padding-bottom: 20px"><center><img id="logoimg" src="img/squareface.png" alt="HELLO!"></center></h1>
@@ -342,58 +342,47 @@
                             </small>
                         </h2>
                     </div>
-                        <p>
-                            <a href="#segwayDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
-                                <span class="modalButton">Medical Segway Robot</span>
-                            </a>
-                            <div id="segwayDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
-                                <p>
-                                    Working from a prefabricated embedded board and 3D-printed 2-DOF arm, our team, consisting of myself, Jacob Hackett and Michael McConnell, programmed and tested a system that allowed the arm to function as a sorting tool for objects on an assembly line in just 7 weeks.<br><br>
+                        <a href="#segwayDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
+                            <span class="modalButton">Medical Segway Robot</span>
+                        </a>
+                        <div id="segwayDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
+                            <p>
+                                Automated Emergency Room intake, room ushering ...
+                            </p>
+                        </div>
 
-                                    To facilitate this task, the team updated a code library in C that was given to us in a work-in-progress state. This library was source-controlled using GitHub and sported such expanded features and PID control and Analog-to-Digital I/O conversion.<br><br>
+                        <a href="#turtlebotDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
+                            <span class="modalButton">Autonomous Turtlebot</span>
+                        </a>
+                        <div id="turtlebotDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
+                            <p>
+                                Automated A* pathfinding and 2D map generation from visual information ...
+                            </p>
+                        </div>
 
-                                    Using an IR sensor, the arm was capable of determining the speed of the block as it moved down the conveyor belt, determining where along the width of the belt the block was. By taking these factors in to account in combination with Inverse Kinematics programming, the arm reaches for and picks up the moving object as it passes by. From here, the arm weighs the object, and uses that information to determine how it should tilt the integrated hopper before dropping the object on to the hopper itself. <br>
-                                </p>
-                            </div>
+                        <a href="#ikDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
+                            <span class="modalButton">Inverse Kinematics Arm</span>
+                        </a>
+                        <div id="ikDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
+                            <p>
+                                Working from a prefabricated embedded board and 3D-printed 2-DOF arm, our team, consisting of myself, Jacob Hackett and Michael McConnell, programmed and tested a system that allowed the arm to function as a sorting tool for objects on an assembly line in just 7 weeks.<br><br>
 
-                            <a href="#turtlebotDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
-                                <span class="modalButton">Autonomous Turtlebot</span>
-                            </a>
-                            <div id="turtlebotDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
-                                <p>
-                                    Working from a prefabricated embedded board and 3D-printed 2-DOF arm, our team, consisting of myself, Jacob Hackett and Michael McConnell, programmed and tested a system that allowed the arm to function as a sorting tool for objects on an assembly line in just 7 weeks.<br><br>
+                                To facilitate this task, the team updated a code library in C that was given to us in a work-in-progress state. This library was source-controlled using GitHub and sported such expanded features and PID control and Analog-to-Digital I/O conversion.<br><br>
 
-                                    To facilitate this task, the team updated a code library in C that was given to us in a work-in-progress state. This library was source-controlled using GitHub and sported such expanded features and PID control and Analog-to-Digital I/O conversion.<br><br>
+                                Using an IR sensor, the arm was capable of determining the speed of the block as it moved down the conveyor belt, determining where along the width of the belt the block was. By taking these factors in to account in combination with Inverse Kinematics programming, the arm reaches for and picks up the moving object as it passes by. From here, the arm weighs the object, and uses that information to determine how it should tilt the integrated hopper before dropping the object on to the hopper itself. <br>
+                            </p>
+                        </div>
 
-                                    Using an IR sensor, the arm was capable of determining the speed of the block as it moved down the conveyor belt, determining where along the width of the belt the block was. By taking these factors in to account in combination with Inverse Kinematics programming, the arm reaches for and picks up the moving object as it passes by. From here, the arm weighs the object, and uses that information to determine how it should tilt the integrated hopper before dropping the object on to the hopper itself. <br>
-                                </p>
-                            </div>
+                        <a href="#marlowDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/2002_1.png); background-position: center 60%;">
+                            <span class="modalButton">Firefighter Marlow</span>
+                        </a>
+                          <div id="marlowDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
+                            <p>
+                                Designed, fabricated and tested over the course of 7 weeks with my partners Lumbini Parnas and Jacob Hackett, this robot, nicknamed Marlow, was capable of autonomously navigating randomized mazes to locate and extinguish a fire located within the maze itself.<br><br>
 
-                            <a href="#ikDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
-                                <span class="modalButton">Inverse Kinematics Arm</span>
-                            </a>
-                            <div id="ikDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
-                                <p>
-                                    Working from a prefabricated embedded board and 3D-printed 2-DOF arm, our team, consisting of myself, Jacob Hackett and Michael McConnell, programmed and tested a system that allowed the arm to function as a sorting tool for objects on an assembly line in just 7 weeks.<br><br>
-
-                                    To facilitate this task, the team updated a code library in C that was given to us in a work-in-progress state. This library was source-controlled using GitHub and sported such expanded features and PID control and Analog-to-Digital I/O conversion.<br><br>
-
-                                    Using an IR sensor, the arm was capable of determining the speed of the block as it moved down the conveyor belt, determining where along the width of the belt the block was. By taking these factors in to account in combination with Inverse Kinematics programming, the arm reaches for and picks up the moving object as it passes by. From here, the arm weighs the object, and uses that information to determine how it should tilt the integrated hopper before dropping the object on to the hopper itself. <br>
-                                </p>
-                            </div>
-
-                            <a href="#marlowDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/2002_1.png); background-position: center 60%;">
-                                <span class="modalButton">Firefighter Marlow</span>
-                            </a>
-                              <div id="marlowDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
-                                <p>
-                                    Designed, fabricated and tested over the course of 7 weeks with my partners Lumbini Parnas and Jacob Hackett, this robot, nicknamed Marlow, was capable of autonomously navigating randomized mazes to locate and extinguish a fire located within the maze itself.<br><br>
-
-                                    Marlow was also capable of keeping and reporting accurate data regarding its own position and the estimated position of the fire back to its owner by using. Using a combination of prefabricated sensors and custom-fabricated parts, Marlow can be constructed on a budget of under $400.  
-                                </p>
-                            </div>
-
-                        </p>
+                                Marlow was also capable of keeping and reporting accurate data regarding its own position and the estimated position of the fire back to its owner by using. Using a combination of prefabricated sensors and custom-fabricated parts, Marlow can be constructed on a budget of under $400.  
+                            </p>
+                        </div>
 
                 </div>
 
