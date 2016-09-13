@@ -47,6 +47,14 @@
                 text-shadow: -3px 3px #000000, -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;;
             }
 
+            span.carat {
+                display: none;
+            }
+
+            .active > a > span.carat {
+                display: inline-block;
+            }
+
             .modal-dialog{
                 width: 50%;
             }
@@ -175,10 +183,10 @@
                 <div class="collapse navbar-collapse nav-stacked" id="navbar">
                     <h1 id="title" style="padding-bottom: 20px"><center><img id="logoimg" src="img/squareface.png" alt="HELLO!"></center></h1>
                     <ul class="nav nav-pills nav-stacked" role="tablist">
-                        <li role="presentation"><a href="#about">About</a></li>
-                        <li role="presentation"><a href="#games">Games</a></li>
-                         <li role="presentation"><a href="#robots">Robots</a></li>     
-                        <li role="presentation"><a href="#contact">Contact</a></li>                
+                        <li role="presentation"><a href="#about"><span class="carat">></span>About</a></li>
+                        <li role="presentation"><a href="#games"><span class="carat">></span>Games</a></li>
+                         <li role="presentation"><a href="#robots"><span class="carat">></span>Robots</a></li>     
+                        <li role="presentation"><a href="#contact"><span class="carat">></span>Contact</a></li>                
                     </ul>
                     <!--span class="footer">(c)Sunshine Devs</span-->
                 </div>
