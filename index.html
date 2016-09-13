@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tom Farro Dot Com</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <style>
+
+            @font-face{
+                font-family: Silkscreen;
+                src: url(fonts/slkscre.ttf) format("truetype");
+            }
+
+            body {
+                position: relative;
+            }
+
+            nav {
+                margin: 0;
+            }
+
+            h2 {
+                font-family: Silkscreen;
+                text-shadow: -3px 3px #000000, -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;;
+            }
+
+            .modal-btn{
+                background-color:  #472719;
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+                padding: 0px;
+                margin: 5px;
+                background-image: url(img/hn_1.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                text-align: left;
+
+            }
+
+            span.modalButton {
+                font-size: 3em;
+                position: relative;
+                top: 140px;
+                padding: 10px;
+                font-family: Silkscreen;
+                text-shadow: -3px 3px #000000, -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;;
+            }
+
+            .modal-dialog{
+                width: 50%;
+            }
+
+            .modal-header{
+                background-color: #9E7A76;
+            }
+
+            .modal-footer{
+                background-color: #9E7A76;
+            }
+
+            .modal-body{
+                background-color: #6F5053;
+            }
+
+            .navbar-inverse {
+                background-color: #472719;
+            }
+
+            .navbar-inverse .navbar-toggle {
+                border-color: dimgray;
+            }
+
+            .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+                border-color: dimgray;
+            }
+
+            .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+                background-color:  #6F5053;
+            }
+
+            .nav-pills
+            {
+                font-family: Silkscreen;
+            }
+            
+            .nav-pills>li.active>a, 
+            .nav-pills>li.active>a:hover, 
+            .nav-pills>li.active>a:focus {
+                background-color: #9E7A76;
+            }
+
+            .nav>li>a:hover, .nav>li>a:focus {
+                text-decoration: none;
+                background-color: #6F5053;
+            }
+
+            #nav-lg-md {
+                position: fixed;
+                height: 100%;
+                padding-top: 10vw;
+                padding-bottom: 10vw;
+            }
+
+            #logoimg {
+                width: 100%;
+            }
+
+            .tab-content {
+                margin: 0;
+                padding: 0;
+            }
+            .tabpane {
+                /*min-height: 25vw;*/
+                height: auto;
+                padding: 64px;
+                padding-top: 32px;
+                background-color: #9E7A76;
+            }
+            .tabpane:nth-child(2n){
+                background-color: #6F5053;
+            }
+
+            .buffer{
+            }
+
+            .twitter-follow-button{
+                margin-top: 6px;
+            }
+
+            .twitter-timeline{
+                height: 100%;
+            }
+
+            .character-portrait {
+                margin: 2vw;
+                transition: all 0.1s ease-in;
+            }
+            .character-portrait:hover, .character-portrait:active {
+                transform: translateY(-5%);
+            }
+
+            .footer {
+                padding: 2vw;
+                min-height: 20vh;
+                background-color: #2222222;
+            }
+            .modal-content{
+                background-color: dimgray;
+            }
+
+            .btn-bio{
+                background-color: gray;
+                padding: 0;
+                border: 0;
+            }
+
+        </style>
+    </head>
+
+    <body data-spy="scroll" data-target="#navbar" style="background-color: #472719">
+        <!-- NAVIGATION ELEMENTS -->
+        <!-- TODO: MAKE MOBILE FRIENDLY -->
+        <nav class="col-lg-2 col-md-2 col-sm-3">
+            <div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Tom Farro</a>
+                </div>
+                <div class="collapse navbar-collapse nav-stacked" id="navbar">
+                    <h1 id="title" style="padding-bottom: 20px"><center><img id="logoimg" src="img/squareface.png" alt="HELLO!"></center></h1>
+                    <ul class="nav nav-pills nav-stacked" role="tablist">
+                        <li role="presentation"><a href="#about">About</a></li>
+                        <li role="presentation"><a href="#games">Games</a></li>
+                         <li role="presentation"><a href="#robots">Robots</a></li>     
+                        <li role="presentation"><a href="#contact">Contact</a></li>                
+                    </ul>
+                    <!--span class="footer">(c)Sunshine Devs</span-->
+                </div>
+            </div>
+        </nav>
+        <!-- END NAVIGATION ELEMENTS -->
+        <!-- CONTENT STARTS HERE -->
+        <div id="content">
+            <div class="col-lg-2 col-md-2 col-sm-3"></div>
+            <div class="tab-content col-lg-10 col-md-10 col-sm-9">
+                <!-- ABOUT TAB -->
+                <div role="tabpanel" class="tabpane active" id="about">
+                    <div class="row">
+                        <h2>Hey, I'm Tom</h2>
+                        <p>
+                            I'm just a man who wants to build interactive experiences for a living, be they physical or digital. <br>
+                            So, in 2013 I enrolled at <b>Worcester Polytechnic Institute</b>, and am currently finishing up a major in <b>Robotics Engineering</b> and a minor in <b>Game Design</b>!<br><br>
+
+                            This portfolio contains some of my highlights in both mechanical and software engineering.<br>
+                            If you'd like to <a href="#contact" style="color: #C3C3C3;">contact me</a>, head to the section below!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- GAMES TAB -->
+                <div role="tabpanel" class="tabpane" id="games">
+                    <div class="row">
+                        <h2>
+                            Games! 
+                            <small>
+                                <font color="#C3C3C3">and other Software!</font>
+                            </small>
+                        </h2>
+                              <a href="#heistNightDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/hn_1.png); background-position: center center;">
+                                <span class="modalButton">Heist Night</span>
+                            </a>
+                             <div id="heistNightDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
+                                <p>
+                                    Heist Night is a local multiplayer game of cops-and-robbers, with a turnbased stealth twist. Four players play as the team of thieves, while the fifth plays as the entire police force.<br>
+                                    Players gather around the television and connect in using their mobile device as a controller, providing them each with a private screen, and allowing each player to sneak around without fear of screen-cheating!<br>
+                                    No external app is neccessary to play, so anyone on any device can join the fun!<br><br>
+
+                                    Winner of the MassDiGI Game Challenge "Best College Alpha" Award in 2016, Heist Night was also chosen to be showcased at the 2016 Boston Festival of Indie Games.<br><br>
+
+                                    Much of the hard work I've put in to Heist Night are in its backend systems. Namely, the game pushes Unity to the limit of what it was meant to do by generating a local content server in-app at runtime, without the need for external software. It also features two-way netcode communications with our non-Unity, custom-designed HTML mobile controllers, which are served to players via the aformentioned server. Heist Night is an ongoing labor of love that gets better by the day.<br><br>
+
+                                    You can read up more about Heist Night on its dedicated website (which I also designed), <a href="https://sunshinecommittee.io" style="color: #C3C3C3;" target="_blank">http://sunshinecommittee.io</a>!
+                                </p>
+                            </div>
+
+                            <a href="#summonMeDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/summon_me_banner.png); background-position: center 85%;">
+                                <span class="modalButton">Summon Me Something</span>
+                            </a>
+                             <div id="summonMeDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
+                                <p>
+                                    Designed and built in (under) 48 hours for Global Game Jam 2016 following the theme: 'Ritual!'<br><br>
+
+                                    Summon Me Something is a two-player competitive game wherein players must conjure up potions using three ingredients from a set of many to create something that meets the description set forth by the teacher.<br> 
+                                    There's just one catch: you don't know what any of the ingredients correspond to, and you might never! The ingredients change purpose every match, meaning that each game is a new association puzzle to figure out faster than your opponent. The first player to ten correct solutions wins the match.<br><br> 
+
+                                    Can be played with two controllers, or with two players at a single keyboard!<br>
+                                    P1 Movement: WASD (Analog Stick) / P1 Interact: Left Ctrl (A Button)<br>
+
+                                    P2 Movement: Arrow Keys (Analog Stick) / P2 Interact: Right Ctrl (A Button)<br><br>
+
+                                    As always, featuring art assets from John Guerra and Dillon DeSimone!
+                                </p>
+                            </div>
+                           
+
+                            <a href="#softEngDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/mapper_1.png); background-position: center 85%;">
+                                <span class="modalButton">WPI Mapper</span>
+                            </a>
+                              <div id="softEngDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
+                                <p>
+                                    Developed over seven weeks as the project with a nine-person, randomly-assigned team for CS3733: Software Engineering, the WPI Mapper is an open-ended application capable of plotting efficient and accessible routes around campus. By storing and reading map data to and from a remote database, the application was capable of being used from any terminal with minimal overhead.<br><br>
+
+                                    In addition to providing a detailed map of the WPI campus, the Mapper also allowed for any calculated route plans to be sent to email with accompanying step-by-step images. Furthermore, the route calculation can be tweaked by the user by altering Route Settings, where the user can inform the program if they require special accommodations, such as wheelchair accessibility.<br><br>
+
+                                    During my time on the team, I served as overall project manager and focused on engineering effective developer-end tools. These developer tools to allow any location to be imported and edited, such that the application could be used for more locations than just the campus map. These tools also utilized our server storage for multi-touch editing capabilities, allowing multiple team members to work on filling out the map simultaneously.<br><br>
+
+                                    Of course, with the term being long over, the server hosting the map data has since been taken offline.
+                                </p>
+                            </div>
+
+                            <a href="#fantasticeDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/ff_1.png); background-position: center 80%;">
+                                <span class="modalButton">Fantastic Finale</span>
+                            </a>
+                            <div id="fantasticeDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
+                                <p>
+                                    Designed and built in (under) 48 hours for Global Game Jam 2015 following the theme: 'What do we do now?'<br><br>
+
+                                    Fantastic Finale starts you off at the very end of your quest against the Dark Lord Dramatos. With the world again at peace, what else is there left for an overleveled warrior to do? <br><br>
+
+                                    To be played with a keyboard.<br>
+                                    Movement: WASD / Talk: T / Attack: Y<br><br>
+
+                                    Again, featuring art assets from John Guerra (3D) and Dillon DeSimone (2D)!
+                                </p>
+                            </div>
+
+                             <a href="#overworldDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/overworld-1.png); background-position: center center;">
+                                <span class="modalButton">IQP: Overworld</span>
+                            </a>
+                            <div id="overworldDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
+                                <p>
+                                    Created as part of my Interactive Qualifying Project, which I enrolled in a year early as a sophomore at the behest of my parnters Dillon DeSimone and Francesca Carletto-Leon. Project Overworld was a GPS-enabled mobile app that aimed to make the navigation of campus more accessible to new freshmen by featuring a host of information about each unique location as they are visited, by providing directions to and from any two locations on campus, and by providing hotlines to campus utilities and local restaurants.<br><br>
+
+                                    Project Overworld was also planned to feature avatar customization and a trivia system which would ask questions about campus facilities and historical lore.<br>
+                                    Unfortunately, as my second real game project, Overworld suffered from being overscoped, and as such, these trivia features never came in to fruition. POther scrapped ideas included an asynchronous multiplayer system, akin to the StreetPass functionality present in the Nintendo 3DS.<br><br>
+                                    You can read <a href="https://web.wpi.edu/Pubs/E-project/Available/E-project-032515-023708/" style="color: #C3C3C3;" target="_blank">the accompanying paper and postmortem</a>, courtesy of the Gordon Library, if you're interested in hearing about that.
+                                </p>
+                            </div>
+
+                             <a href="#weeSeaDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/wst_1.png); background-position: center center%;">
+                                <span class="modalButton">Wee Sea Things</span>
+                            </a>
+                             <div id="weeSeaDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
+                                <p>
+                                    Designed and built in (under) 48 hours for Global Game Jam 2014 following the theme: 'We see things not as they are, but as we are...'<br><br>
+
+                                    After spending all too much time debating the semantics of the theme, we opted to take a literal but mistranscribed stab at it.<br>
+                                    In Wee Sea Things, the player controls a tiny Sea Monkey in an aquarium as well as a child holding a mangifying glass to look in to the tank. By magnifying the Sea Monkey, they take on properties as though they were actually physically larger; they can jump higher and fall faster through the water.<br><br>
+
+                                    Wee Sea Things was my first Unity Project, and I was rather proud of it at the time. It features some fancy viewport trickery to achieve the magnifcation visual effect, and overall I think it represents a somewhat novel and unique concept.<br><br>
+
+                                    Movement: WASD / Jump: Spacebar / Mangifying Glass: Mouse <br><br>
+
+                                    Featuring art assets from the men who would go on to become my long-term Game Jam companions, John Guerra and Dillon DeSimone!
+                                </p>
+                            </div>
+
+
+                    </div>
+
+                    <div class="row">
+                      <!--   <center>
+                            <img src="img/fisticop.png" class="character-portrait" data-toggle="modal" data-target="#fisticopBio" style="opacity: 0.40";> 
+                            <img src="img/graves.png" class="character-portrait" data-toggle="modal" data-target="#gravesBio" style="opacity: 0.40;">
+                            <img src="img/regards.png" class="character-portrait" data-toggle="modal" data-target="#regardsBio" style="opacity: 0.40;">
+                            <img src="img/bigboy.png" class="character-portrait" data-toggle="modal" data-target="#bigboyBio" style="opacity: 0.40;">
+                            <img src="img/lulu.png" class="character-portrait" data-toggle="modal" data-target="#luluBio">
+                        </center> -->
+                    </div>
+                </div>
+
+
+                <div role="tabpanel" class="tabpane" id="robots" style="min-height: 25vh;">
+                    <div class="row">
+                        <h2>Robots!
+                            <small>
+                                <font color="#C3C3C3">and other Hardware!</font>
+                            </small>
+                        </h2>
+                    </div>
+                        <p>
+                            <a href="#segwayDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
+                                <span class="modalButton">Medical Segway Robot</span>
+                            </a>
+                            <div id="segwayDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
+                                <p>
+                                    Working from a prefabricated embedded board and 3D-printed 2-DOF arm, our team, consisting of myself, Jacob Hackett and Michael McConnell, programmed and tested a system that allowed the arm to function as a sorting tool for objects on an assembly line in just 7 weeks.<br><br>
+
+                                    To facilitate this task, the team updated a code library in C that was given to us in a work-in-progress state. This library was source-controlled using GitHub and sported such expanded features and PID control and Analog-to-Digital I/O conversion.<br><br>
+
+                                    Using an IR sensor, the arm was capable of determining the speed of the block as it moved down the conveyor belt, determining where along the width of the belt the block was. By taking these factors in to account in combination with Inverse Kinematics programming, the arm reaches for and picks up the moving object as it passes by. From here, the arm weighs the object, and uses that information to determine how it should tilt the integrated hopper before dropping the object on to the hopper itself. <br>
+                                </p>
+                            </div>
+
+                            <a href="#turtlebotDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
+                                <span class="modalButton">Autonomous ROS Turtlebot</span>
+                            </a>
+                            <div id="turtlebotDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
+                                <p>
+                                    Working from a prefabricated embedded board and 3D-printed 2-DOF arm, our team, consisting of myself, Jacob Hackett and Michael McConnell, programmed and tested a system that allowed the arm to function as a sorting tool for objects on an assembly line in just 7 weeks.<br><br>
+
+                                    To facilitate this task, the team updated a code library in C that was given to us in a work-in-progress state. This library was source-controlled using GitHub and sported such expanded features and PID control and Analog-to-Digital I/O conversion.<br><br>
+
+                                    Using an IR sensor, the arm was capable of determining the speed of the block as it moved down the conveyor belt, determining where along the width of the belt the block was. By taking these factors in to account in combination with Inverse Kinematics programming, the arm reaches for and picks up the moving object as it passes by. From here, the arm weighs the object, and uses that information to determine how it should tilt the integrated hopper before dropping the object on to the hopper itself. <br>
+                                </p>
+                            </div>
+
+                            <a href="#ikDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
+                                <span class="modalButton">Inverse Kinematics Assembly Line</span>
+                            </a>
+                            <div id="ikDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
+                                <p>
+                                    Working from a prefabricated embedded board and 3D-printed 2-DOF arm, our team, consisting of myself, Jacob Hackett and Michael McConnell, programmed and tested a system that allowed the arm to function as a sorting tool for objects on an assembly line in just 7 weeks.<br><br>
+
+                                    To facilitate this task, the team updated a code library in C that was given to us in a work-in-progress state. This library was source-controlled using GitHub and sported such expanded features and PID control and Analog-to-Digital I/O conversion.<br><br>
+
+                                    Using an IR sensor, the arm was capable of determining the speed of the block as it moved down the conveyor belt, determining where along the width of the belt the block was. By taking these factors in to account in combination with Inverse Kinematics programming, the arm reaches for and picks up the moving object as it passes by. From here, the arm weighs the object, and uses that information to determine how it should tilt the integrated hopper before dropping the object on to the hopper itself. <br>
+                                </p>
+                            </div>
+
+                            <a href="#marlowDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/2002_1.png); background-position: center 60%;">
+                                <span class="modalButton">Firefighter Marlow</span>
+                            </a>
+                              <div id="marlowDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
+                                <p>
+                                    Designed, fabricated and tested over the course of 7 weeks with my partners Lumbini Parnas and Jacob Hackett, this robot, nicknamed Marlow, was capable of autonomously navigating randomized mazes to locate and extinguish a fire located within the maze itself.<br><br>
+
+                                    Marlow was also capable of keeping and reporting accurate data regarding its own position and the estimated position of the fire back to its owner by using. Using a combination of prefabricated sensors and custom-fabricated parts, Marlow can be constructed on a budget of under $400.  
+                                </p>
+                            </div>
+
+                        </p>
+
+                </div>
+
+                <!-- CONTACT TAB-->
+                <div role="tabpanel" class="tabpane" id="contact" style="min-height: 25vh;">
+                    <div class="row">
+                        <h2>Stay in Touch!</h2>
+
+                        If you'd like to strike up a conversation with me, I'm active on Twitter! My handle is <a href="https://twitter.com/FomTarro" style="color: #C3C3C3;" target="_blank">@FomTarro</a>; I have the best hot-takes on anime. <br><br>
+
+                        Or, if Twitter seems a bit too unprofessional, you can always shoot an email to <a href="mailto:twfarro@wpi.edu" style="color: #C3C3C3;" target="_blank">twfarro@wpi.edu</a>, and I'll do my best to respond posthaste!
+                    </div>
+
+                </div>
+
+                <div role="tabpanel" class="footer">
+                        <center>
+                            <br>
+                            Website designed by Tom Farro, 2016<br>
+                            Static pages hosted by GitHub<br>
+                            <span style="font-family: Silkscreen;">Silkscreen</span> font provided by Jason Kottke, free for Personal or Commercial Use
+                        </center>
+                </div>
+
+            </div>
+        </div>
+        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-toolkit.min.js"></script>
+        <script src="js/widgets.js"></script>
+        <script>
+            (function($, viewport){
+                $(document).ready(function() {
+                    // run test on initial page load
+                    checkSize();
+                   // run test on resize of the window
+                    $(window).resize(checkSize);
+                    $(window).resize(checkTimeline);
+                     twttr.events.bind(
+                        'loaded',
+                        function (event) {
+                            checkTimeline();
+                        }
+                    );
+                });
+                //Function to the css rule
+                function checkSize(){
+                    // Executes in XS and SM breakpoints
+                    if( viewport.is('xs')) {
+                        $("body").css("padding-top", "59px");
+                        $("nav").addClass("navbar").addClass("navbar-inverse").addClass("navbar-fixed-top");
+                        $("#nav").addClass("navbar-nav");
+                        $("nav > div").addClass("container-fluid");
+                        $("#nav").removeClass("nav-stacked");
+                        $("nav").css("position", "fixed");
+                        $(".navbar-header").show();
+                        $("#title").hide();
+                    } else {
+                        $("body").css("padding-top", "0");
+                        $("nav").removeClass("navbar").removeClass("navbar-inverse").removeClass("navbar-fixed-top");
+                        $("#nav").removeClass("navbar-nav");
+                        $("nav > div").removeClass("container-fluid");
+                        $("#nav").addClass("nav-stacked");
+                        $("nav").css("position", "fixed");
+                        $(".navbar-header").hide();
+                        $("#title").show();
+                    }
+                }
+
+            })(jQuery, ResponsiveBootstrapToolkit);
+        </script>
+    </body>
+</html>
