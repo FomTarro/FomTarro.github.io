@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
         <style>
 
-            @font-face{
+            @font-face {
                 font-family: Silkscreen;
                 src: url(fonts/slkscre.ttf) format("truetype");
             }
@@ -23,7 +23,7 @@
                 text-shadow: -2px 2px #000000, -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;;
             }
 
-            .modal-btn{
+            .dropdown-btn {
                 background-color:  #472719;
                 width: 100%;
                 height: 10vw;
@@ -35,7 +35,6 @@
                 background-size: cover;
                 background-position: center center;
                 text-align: left;
-
             }
 
             span.dropdownButton {
@@ -53,22 +52,6 @@
 
             .active > a > span.carat {
                 display: inline-block;
-            }
-
-            .modal-dialog{
-                width: 50%;
-            }
-
-            .modal-header{
-                background-color: #9E7A76;
-            }
-
-            .modal-footer{
-                background-color: #9E7A76;
-            }
-
-            .modal-body{
-                background-color: #6F5053;
             }
 
             .navbar-inverse {
@@ -132,29 +115,10 @@
             .buffer{
             }
 
-            .twitter-follow-button{
-                margin-top: 6px;
-            }
-
-            .twitter-timeline{
-                height: 100%;
-            }
-
-            .character-portrait {
-                margin: 2vw;
-                transition: all 0.1s ease-in;
-            }
-            .character-portrait:hover, .character-portrait:active {
-                transform: translateY(-5%);
-            }
-
             .footer {
                 padding: 2vw;
                 min-height: 20vh;
                 background-color: #2222222;
-            }
-            .modal-content{
-                background-color: dimgray;
             }
 
             .btn-bio{
@@ -181,7 +145,7 @@
                     <a class="navbar-brand" href="#"></a>
                 </div>
                 <div class="collapse navbar-collapse nav-stacked" id="navbar">
-                    <h1 id="title" style="padding-bottom: 20px"><center><img id="logoimg" src="img/squareface.png" alt="HELLO!"></center></h1>
+                    <h1 id="title" style="padding-bottom: 10px"><center><img id="logoimg" src="img/squareface.png" alt="HELLO!"></center></h1>
                     <ul class="nav nav-pills nav-stacked" role="tablist">
                         <li role="presentation"><a href="#about"><span class="carat">></span>About</a></li>
                         <li role="presentation"><a href="#games"><span class="carat">></span>Games</a></li>
@@ -220,7 +184,7 @@
                                 <font color="#C3C3C3">and other Software!</font>
                             </small>
                         </h2>
-                              <a href="#heistNightDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/hn_1.png); background-position: center center;">
+                              <a href="#heistNightDetails" class="dropdown-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/hn_1.png); background-position: center center;">
                                 <span class="dropdownButton">Heist Night</span>
                             </a>
                              <div id="heistNightDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
@@ -237,12 +201,12 @@
                                 </p>
                             </div>
 
-                            <a href="#summonMeDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/summon_me_banner.png); background-position: center 85%;">
+                            <a href="#summonMeDetails" class="dropdown-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/summon_me_banner.png); background-position: center 85%;">
                                 <span class="dropdownButton">Summon Me Something</span>
                             </a>
                              <div id="summonMeDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
                                 <p>
-                                    Designed and built in (under) 48 hours for Global Game Jam 2016 following the theme: 'Ritual!'<br><br>
+                                    Designed and built in (under) 48 hours for Global Game Jam 2016 following the theme: <i>'Ritual!'</i><br><br>
 
                                     Summon Me Something is a two-player competitive game wherein players must conjure up potions using three ingredients from a set of many to create something that meets the description set forth by the teacher.<br> 
                                     There's just one catch: you don't know what any of the ingredients correspond to, and you might never! The ingredients change purpose every match, meaning that each game is a new association puzzle to figure out faster than your opponent. The first player to ten correct solutions wins the match.<br><br> 
@@ -257,7 +221,7 @@
                             </div>
                            
 
-                            <a href="#softEngDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/mapper_1.png); background-position: center 85%;">
+                            <a href="#softEngDetails" class="dropdown-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/mapper_1.png); background-position: center 85%;">
                                 <span class="dropdownButton">WPI Mapper</span>
                             </a>
                               <div id="softEngDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
@@ -272,12 +236,12 @@
                                 </p>
                             </div>
 
-                            <a href="#fantasticeDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/ff_1.png); background-position: center 80%;">
+                            <a href="#fantasticeDetails" class="dropdown-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/ff_1.png); background-position: center 80%;">
                                 <span class="dropdownButton">Fantastic Finale</span>
                             </a>
                             <div id="fantasticeDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
                                 <p>
-                                    Designed and built in (under) 48 hours for Global Game Jam 2015 following the theme: 'What do we do now?'<br><br>
+                                    Designed and built in (under) 48 hours for Global Game Jam 2015 following the theme: <i>'What do we do now?'</i><br><br>
 
                                     Fantastic Finale starts you off at the very end of your quest against the Dark Lord Dramatos. With the world again at peace, what else is there left for an overleveled warrior to do? <br><br>
 
@@ -288,7 +252,7 @@
                                 </p>
                             </div>
 
-                             <a href="#overworldDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/overworld-1.png); background-position: center center;">
+                             <a href="#overworldDetails" class="dropdown-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/overworld-1.png); background-position: center center;">
                                 <span class="dropdownButton">IQP: Overworld</span>
                             </a>
                             <div id="overworldDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
@@ -301,12 +265,12 @@
                                 </p>
                             </div>
 
-                             <a href="#weeSeaDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/wst_1.png); background-position: center center%;">
+                             <a href="#weeSeaDetails" class="dropdown-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/wst_1.png); background-position: center center%;">
                                 <span class="dropdownButton">Wee Sea Things</span>
                             </a>
                              <div id="weeSeaDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
                                 <p>
-                                    Designed and built in (under) 48 hours for Global Game Jam 2014 following the theme: 'We see things not as they are, but as we are...'<br><br>
+                                    Designed and built in (under) 48 hours for Global Game Jam 2014 following the theme: <i>'We see things not as they are, but as we are...'</i><br><br>
 
                                     After spending all too much time debating the semantics of the theme, we opted to take a literal but mistranscribed stab at it.<br>
                                     In Wee Sea Things, the player controls a tiny Sea Monkey in an aquarium as well as a child holding a mangifying glass to look in to the tank. By magnifying the Sea Monkey, they take on properties as though they were actually physically larger; they can jump higher and fall faster through the water.<br><br>
@@ -332,7 +296,7 @@
                             </small>
                         </h2>
                     </div>
-                        <a href="#segwayDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
+                        <a href="#segwayDetails" class="dropdown-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
                             <span class="dropdownButton">Medical Segway Robot</span>
                         </a>
                         <div id="segwayDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
@@ -341,7 +305,7 @@
                             </p>
                         </div>
 
-                        <a href="#turtlebotDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
+                        <a href="#turtlebotDetails" class="dropdown-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
                             <span class="dropdownButton">Autonomous Turtlebot</span>
                         </a>
                         <div id="turtlebotDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
@@ -350,7 +314,7 @@
                             </p>
                         </div>
 
-                        <a href="#ikDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
+                        <a href="#ikDetails" class="dropdown-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/3001_1.png); background-position: center 25%;">
                             <span class="dropdownButton">Inverse Kinematics Arm</span>
                         </a>
                         <div id="ikDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
@@ -363,7 +327,7 @@
                             </p>
                         </div>
 
-                        <a href="#marlowDetails" class="modal-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/2002_1.png); background-position: center 60%;">
+                        <a href="#marlowDetails" class="dropdown-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/2002_1.png); background-position: center 60%;">
                             <span class="dropdownButton">Firefighter Marlow</span>
                         </a>
                           <div id="marlowDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
@@ -383,7 +347,7 @@
 
                         If you'd like to strike up a conversation with me, I'm active on Twitter! My handle is <a href="https://twitter.com/FomTarro" style="color: #C3C3C3;" target="_blank">@FomTarro</a>; I have the best hot-takes on anime. <br><br>
 
-                        Or, if Twitter seems a bit too unprofessional, you can always shoot an email to <a href="mailto:twfarro@wpi.edu" style="color: #C3C3C3;" target="_blank">twfarro@wpi.edu</a>, and I'll do my best to respond posthaste!
+                        Or, if Twitter seems a bit too unprofessional, you can always shoot an email to <a href="mailto:twfarro@wpi.edu" style="color: #C3C3C3;">twfarro@wpi.edu</a>, and I'll do my best to respond posthaste!
                     </div>
 
                 </div>
@@ -410,13 +374,6 @@
                     checkSize();
                    // run test on resize of the window
                     $(window).resize(checkSize);
-                    $(window).resize(checkTimeline);
-                     twttr.events.bind(
-                        'loaded',
-                        function (event) {
-                            checkTimeline();
-                        }
-                    );
                 });
                 //Function to the css rule
                 function checkSize(){
