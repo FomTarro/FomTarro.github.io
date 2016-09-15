@@ -23,6 +23,15 @@
                 text-shadow: -2px 2px #000000, -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;;
             }
 
+            .thumbnail{
+                width: 96px;
+                height: 96px;
+                background-image: url(img/hn_1.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+
             .dropdown-btn {
                 background-color:  #472719;
                 width: 100%;
@@ -127,6 +136,10 @@
                 border: 0;
             }
 
+            .center {
+                width: 50%;
+            }
+
         </style>
     </head>
 
@@ -169,7 +182,7 @@
                             I'm just a man who wants to build interactive experiences for a living, be they physical or digital. <br>
                             So, in 2013 I enrolled at <b>Worcester Polytechnic Institute</b>, and am currently finishing up a major in <b>Robotics Engineering</b> and a minor in <b>Game Design</b>!<br><br>
 
-                            This portfolio contains some of my highlights in both mechanical and software engineering.<br>
+                            This portfolio contains some of my highlights in both mechanical and software engineering, in reverse chronological order.<br>
                             If you'd like to <a href="#contact" style="color: #C3C3C3;">contact me</a>, head to the section below!
                         </p>
                     </div>
@@ -197,7 +210,8 @@
 
                                     Much of the hard work I've put in to Heist Night are in its backend systems. Namely, the game pushes Unity to the limit of what it was meant to do by generating a local content server in-app at runtime, without the need for external software. It also features two-way netcode communications with our non-Unity, custom-designed HTML mobile controllers, which are served to players via the aformentioned server. Heist Night is an ongoing labor of love that gets better by the day.<br><br>
 
-                                    You can read up more about Heist Night on its dedicated website (which I also designed), <a href="https://sunshinecommittee.io" style="color: #C3C3C3;" target="_blank">http://sunshinecommittee.io</a>!
+                                    You can read up more about Heist Night on its dedicated website (which I also designed), <a href="https://sunshinecommittee.io" style="color: #C3C3C3;" target="_blank">http://sunshinecommittee.io</a>!<br>
+
                                 </p>
                             </div>
 
@@ -310,7 +324,13 @@
                         </a>
                         <div id="turtlebotDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
                             <p>
-                                Automated A* pathfinding and 2D map generation from visual information ...
+                                Programmed over 7 weeks using ROS  and Python on Ubuntu, we designed a system for the Turtlebot to facilitate autonomous navigation around a procedurally explored map.<br><br> 
+
+                                Using visual data from its onboard Kinect sensor, the Turtlebot parsed the data into a working map. From there, it used A* to plan efficient routes towards unexplored regions of the map, in order to optimally continue exploration until the entire pathable area was discovered and parsed.
+
+                                <br><br>
+
+                                This robot was produced with help from my teammates, Jacob Hackett and Lumbini Parnas.
                             </p>
                         </div>
 
@@ -319,11 +339,13 @@
                         </a>
                         <div id="ikDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
                             <p>
-                                Working from a prefabricated embedded board and 3D-printed 2-DOF arm, our team, consisting of myself, Jacob Hackett and Michael McConnell, programmed and tested a system that allowed the arm to function as a sorting tool for objects on an assembly line in just 7 weeks.<br><br>
+                                Working from a prefabricated embedded board and 3D-printed 2-DOF arm, we programmed and tested a system that allowed the arm to function as a sorting tool for objects on an assembly line in just 7 weeks.<br><br>
 
                                 To facilitate this task, the team updated a code library in C that was given to us in a work-in-progress state. This library was source-controlled using GitHub and sported such expanded features and PID control and Analog-to-Digital I/O conversion.<br><br>
 
-                                Using an IR sensor, the arm was capable of determining the speed of the block as it moved down the conveyor belt, determining where along the width of the belt the block was. By taking these factors in to account in combination with Inverse Kinematics programming, the arm reaches for and picks up the moving object as it passes by. From here, the arm weighs the object, and uses that information to determine how it should tilt the integrated hopper before dropping the object on to the hopper itself. <br>
+                                Using an IR sensor, the arm was capable of determining the speed of the block as it moved down the conveyor belt, determining where along the width of the belt the block was. By taking these factors in to account in combination with Inverse Kinematics programming, the arm reaches for and picks up the moving object as it passes by. From here, the arm weighs the object, and uses that information to determine how it should tilt the integrated hopper before dropping the object on to the hopper itself. <br><br>
+
+                                This robot was produced with help from my teammates, Jacob Hackett and Michael McConnell.
                             </p>
                         </div>
 
@@ -332,9 +354,11 @@
                         </a>
                           <div id="marlowDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
                             <p>
-                                Designed, fabricated and tested over the course of 7 weeks with my partners Lumbini Parnas and Jacob Hackett, this robot, nicknamed Marlow, was capable of autonomously navigating randomized mazes to locate and extinguish a fire located within the maze itself.<br><br>
+                                Designed, fabricated and tested over the course of 7 weeks, this robot (nicknamed Marlow) was capable of autonomously navigating randomized mazes to locate and extinguish a fire located within the maze itself.<br><br>
 
-                                Marlow was also capable of keeping and reporting accurate data regarding its own position and the estimated position of the fire back to its owner by using. Using a combination of prefabricated sensors and custom-fabricated parts, Marlow can be constructed on a budget of under $400.  
+                                Marlow was also capable of keeping and reporting accurate data regarding its own position and the estimated position of the fire back to its owner by using. Using a combination of prefabricated sensors and custom-fabricated parts, Marlow can be constructed on a budget of under $400.<br><br>
+
+                                This robot was produced with help from my teammates, Jacob Hackett and Lumbini Parnas.
                             </p>
                         </div>
 
@@ -363,6 +387,7 @@
 
             </div>
         </div>
+
         <script src="js/jquery-3.1.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap-toolkit.min.js"></script>
