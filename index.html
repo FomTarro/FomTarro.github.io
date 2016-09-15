@@ -3,6 +3,7 @@
     <head>
         <title>Tom Farro Dot Com</title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/blueimp-gallery.min.css">
         <style>
 
             @font-face {
@@ -30,6 +31,8 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
+                display: inline-block;
+                margin: 5px;
             }
 
             .dropdown-btn {
@@ -144,6 +147,20 @@
     </head>
 
     <body data-spy="scroll" data-target="#navbar" style="background-color: #472719">
+
+
+
+        <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+        <div id="blueimp-gallery" class="blueimp-gallery">
+            <div class="slides"></div>
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+        </div>
+
         <!-- NAVIGATION ELEMENTS -->
         <!-- TODO: MAKE MOBILE FRIENDLY -->
         <nav class="col-lg-2 col-md-2 col-sm-3">
@@ -212,6 +229,13 @@
 
                                     You can read up more about Heist Night on its dedicated website (which I also designed), <a href="https://sunshinecommittee.io" style="color: #C3C3C3;" target="_blank">http://sunshinecommittee.io</a>!<br>
 
+                                    <!-- Button trigger modal -->
+                                    <!-- <div id="links" class="links">
+                                        <a href="img/hn_1.png" class="thumbnail" data-gallery></a>
+                                        <a href="img/hn_1.png" class="thumbnail" data-gallery></a>
+                                    </div>
+ -->
+
                                 </p>
                             </div>
 
@@ -258,6 +282,8 @@
                                     Designed and built in (under) 48 hours for Global Game Jam 2015 following the theme: <i>'What do we do now?'</i><br><br>
 
                                     Fantastic Finale starts you off at the very end of your quest against the Dark Lord Dramatos. With the world again at peace, what else is there left for an overleveled warrior to do? <br><br>
+
+                                    Somewhat overscoped
 
                                     To be played with a keyboard.<br>
                                     Movement: WASD / Talk: T / Attack: Y<br><br>
@@ -392,6 +418,17 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap-toolkit.min.js"></script>
         <script src="js/widgets.js"></script>
+        <script src="js/blueimp-gallery.min.js"></script>
+        <script>
+        document.getElementById('links').onclick = function (event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+            blueimp.Gallery(links, options);
+        };
+        </script>
         <script>
             (function($, viewport){
                 $(document).ready(function() {
