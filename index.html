@@ -3,7 +3,9 @@
     <head>
         <title>Tom Farro Dot Com</title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css"/>
         <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <style>
 
             @font-face {
@@ -32,7 +34,7 @@
                 background-size: cover;
                 background-position: center center;
                 display: inline-block;
-                margin: 5px;
+                margin-right: 5px;
             }
 
             .dropdown-btn {
@@ -124,23 +126,25 @@
                 background-color: #6F5053;
             }
 
-            .buffer{
-            }
-
             .footer {
                 padding: 2vw;
                 min-height: 20vh;
                 background-color: #2222222;
             }
 
-            .btn-bio{
-                background-color: gray;
-                padding: 0;
-                border: 0;
-            }
-
             .center {
                 width: 50%;
+            }
+
+            .secret{
+                display: none;
+            }
+
+            .silkscreen{
+                font-family: Silkscreen;
+            }
+            .btn-social-icon{
+                margin-right: 5px;
             }
 
         </style>
@@ -154,11 +158,11 @@
         <div id="blueimp-gallery" class="blueimp-gallery">
             <div class="slides"></div>
             <h3 class="title"></h3>
-            <a class="prev">‹</a>
-            <a class="next">›</a>
-            <a class="close">×</a>
+<!--             <a class="prev silkscreen">‹</a>
+            <a class="next silkscreen">›</a>
+            <a class="close silkscreen">×</a>
             <a class="play-pause"></a>
-            <ol class="indicator"></ol>
+            <ol class="indicator"></ol> -->
         </div>
 
         <!-- NAVIGATION ELEMENTS -->
@@ -254,7 +258,17 @@
 
                                     P2 Movement: Arrow Keys (Analog Stick) / P2 Interact: Right Ctrl (A Button)<br><br>
 
-                                    As always, featuring art assets from John Guerra and Dillon DeSimone!
+                                    As always, featuring art assets from John Guerra and Dillon DeSimone!<br>
+                                    <a href="downloads/SummonMeSomethingV03.zip" style="color: #C3C3C3;">(download)</a>
+
+                                     <!-- Button trigger modal -->
+                                    <div id="sms" class="links">
+                                        <a href="img/sms_1.png" class="thumbnail" style="background-image: url(img/sms_1.png);" data-gallery="#blueimp-gallery-sms"></a>
+                                        <a href="img/sms_2.png" class="thumbnail" style="background-image: url(img/sms_2.png);" data-gallery="#blueimp-gallery-sms"></a>
+                                        <a href="img/sms_4.png" class="thumbnail" style="background-image: url(img/sms_4.png);" data-gallery="#blueimp-gallery-sms"></a>
+                                    </div>
+
+
                                 </p>
                             </div>
                            
@@ -270,7 +284,11 @@
 
                                     During my time on the team, I served as overall project manager and focused on engineering effective developer-end tools. These developer tools to allow any location to be imported and edited, such that the application could be used for more locations than just the campus map. These tools also utilized our server storage for multi-touch editing capabilities, allowing multiple team members to work on filling out the map simultaneously.<br><br>
 
-                                    Of course, with the term being long over, the server hosting the map data has since been taken offline.
+                                    Of course, with the term being long over, the server hosting the map data has since been taken offline.<br>
+                                    <div id="mapper" class="links">
+                                        <a href="img/mapper_1.png" class="thumbnail" style="background-image: url(img/mapper_1.png);" data-gallery="#blueimp-gallery-mapper"></a>
+                                        <a href="img/mapper_2.png" class="thumbnail" style="background-image: url(img/mapper_2.png);" data-gallery="#blueimp-gallery-mapper"></a>
+                                    </div>
                                 </p>
                             </div>
 
@@ -288,11 +306,15 @@
                                     To be played with a keyboard.<br>
                                     Movement: WASD / Talk: T / Attack: Y<br><br>
 
-                                    Again, featuring art assets from John Guerra (3D) and Dillon DeSimone (2D)!
+                                    Again, featuring art assets from John Guerra (3D) and Dillon DeSimone (2D)!<br>
+                                    <div id="ff" class="links">
+                                        <a href="img/ff_1.png" class="thumbnail" style="background-image: url(img/ff_1.png);" data-gallery="#blueimp-gallery-ff"></a>
+                                        <a href="img/ff_2.png" class="thumbnail" style="background-image: url(img/ff_2.png);" data-gallery="#blueimp-gallery-ff"></a>
+                                    </div>
                                 </p>
                             </div>
 
-                             <a href="#overworldDetails" class="dropdown-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/overworld-1.png); background-position: center center;">
+                             <a href="#overworldDetails" class="dropdown-btn btn btn-default details collapsed" data-toggle="collapse" style="background-image: url(img/overworld_1.png); background-position: center center;">
                                 <span class="dropdownButton">IQP: Overworld</span>
                             </a>
                             <div id="overworldDetails" class="details-box collapse" aria-expanded="false" style="padding-left: 25px; padding-right: 25px;">
@@ -301,7 +323,10 @@
 
                                     Project Overworld was also planned to feature avatar customization and a trivia system which would ask questions about campus facilities and historical lore.<br>
                                     Unfortunately, as my second real game project, Overworld suffered from being overscoped, and as such, these trivia features never came in to fruition. Other scrapped ideas included an asynchronous multiplayer system, akin to the StreetPass functionality present in the Nintendo 3DS.<br><br>
-                                    You can read <a href="https://web.wpi.edu/Pubs/E-project/Available/E-project-032515-023708/" style="color: #C3C3C3;" target="_blank">the accompanying paper and postmortem</a>, courtesy of the Gordon Library, if you're interested in hearing about that.
+                                    You can read <a href="https://web.wpi.edu/Pubs/E-project/Available/E-project-032515-023708/" style="color: #C3C3C3;" target="_blank">the accompanying paper and postmortem</a>, courtesy of the Gordon Library, if you're interested in hearing about that.<br>
+                                    <div id="overworld" class="links">
+                                        <a href="img/overworld_1.png" class="thumbnail" style="background-image: url(img/overworld_1.png);" data-gallery="#blueimp-gallery-overworld"></a>
+                                    </div>
                                 </p>
                             </div>
 
@@ -371,7 +396,10 @@
 
                                 Using an IR sensor, the arm was capable of determining the speed of the block as it moved down the conveyor belt, determining where along the width of the belt the block was. By taking these factors in to account in combination with Inverse Kinematics programming, the arm reaches for and picks up the moving object as it passes by. From here, the arm weighs the object, and uses that information to determine how it should tilt the integrated hopper before dropping the object on to the hopper itself. <br><br>
 
-                                This robot was produced with help from my teammates, Jacob Hackett and Michael McConnell.
+                                This robot was produced with help from my teammates, Jacob Hackett and Michael McConnell.<br>
+                                 <div id="ik" class="links">
+                                    <a href="img/3001_1.png" class="thumbnail" style="background-image: url(img/3001_1.png);" data-gallery="#blueimp-gallery-ik"></a>
+                                </div>
                             </p>
                         </div>
 
@@ -384,7 +412,13 @@
 
                                 Marlow was also capable of keeping and reporting accurate data regarding its own position and the estimated position of the fire back to its owner by using. Using a combination of prefabricated sensors and custom-fabricated parts, Marlow can be constructed on a budget of under $400.<br><br>
 
-                                This robot was produced with help from my teammates, Jacob Hackett and Lumbini Parnas.
+                                This robot was produced with help from my teammates, Jacob Hackett and Lumbini Parnas.<br>
+                                <div id="marlow" class="links">
+                                    <a href="img/2002_1.png" class="thumbnail" style="background-image: url(img/2002_1.png);" data-gallery="#blueimp-gallery-marlow"></a>
+                                    <a href="img/2002_2.png" class="thumbnail" style="background-image: url(img/2002_2.png);" data-gallery="#blueimp-gallery-marlow"></a>
+                                    <a href="img/2002_3.png" class="thumbnail" style="background-image: url(img/2002_3.png);" data-gallery="#blueimp-gallery-marlow"></a>
+                                    <a href="img/2002_4.png" class="thumbnail" style="background-image: url(img/2002_4.png);" data-gallery="#blueimp-gallery-marlow"></a>
+                                </div>
                             </p>
                         </div>
 
@@ -397,9 +431,25 @@
 
                         If you'd like to strike up a conversation with me, I'm active on Twitter! My handle is <a href="https://twitter.com/FomTarro" style="color: #C3C3C3;" target="_blank">@FomTarro</a>; I have the best hot-takes on anime. <br><br>
 
-                        Or, if Twitter seems a bit too unprofessional, you can always shoot an email to <a href="mailto:twfarro@wpi.edu" style="color: #C3C3C3;">twfarro@wpi.edu</a>, and I'll do my best to respond posthaste!
-                    </div>
+                        Or, if Twitter seems a bit too unprofessional, you can always shoot an email to <a href="mailto:twfarro@wpi.edu" style="color: #C3C3C3;">twfarro@wpi.edu</a>, and I'll do my best to respond posthaste!<br><br>
 
+                        If you're looking to get even more professional, you can network with me via my <a href="http://www.linkedin.com/in/tom-farro" style="color: #C3C3C3;" target="_blank">LinkedIn profile</a>, as well.<br><br>
+                        <a href="https://twitter.com/FomTarro" target="_blank" class="btn btn-social-icon btn-twitter">
+                            <span class="fa fa-twitter"></span>
+                          </a>
+                        <a href="mailto:twfarro@wpi.edu" class="btn btn-social-icon btn-reddit">
+                            <span class="fa glyphicon-envelope"></span>
+                          </a>
+                        <a href="http://www.linkedin.com/in/tom-farro" target="_blank" class="btn btn-social-icon btn-linkedin">
+                            <span class="fa fa-linkedin"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tabpane secret">
+                    <h2>WELCOME TO THE SECRET ZONE!</h2>
+
+                    You found the secret! +1!
                 </div>
 
                 <div role="tabpanel" class="footer">
@@ -410,15 +460,16 @@
                             <span style="font-family: Silkscreen;">Silkscreen</span> font provided by Jason Kottke, free for Personal or Commercial Use
                         </center>
                 </div>
-
             </div>
         </div>
-
         <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap-toolkit.min.js"></script>
         <script src="js/widgets.js"></script>
         <script src="js/blueimp-gallery.min.js"></script>
+        <script src="js/jquery.blueimp-gallery.min.js"></script>
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
         <script>
         document.getElementById('links').onclick = function (event) {
             event = event || window.event;
