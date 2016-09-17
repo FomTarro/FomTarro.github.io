@@ -36,6 +36,9 @@
                 margin-right: 5px;
                 border: none;
             }
+            .thumbnail:hover, .thumbnail.active{
+                transform: translateY(-5%);
+            }
 
             .dropdown-btn {
                 background-color:  #472719;
