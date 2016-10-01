@@ -16,7 +16,7 @@
 
             h2 {
                 font-family: Silkscreen;
-                text-shadow: -2px 2px #000000, -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;;
+                text-shadow: -2px 2px #000000, -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
             }
 
             a {
@@ -64,7 +64,7 @@
                 top: 6.5vw;
                 padding: 10px;
                 font-family: Silkscreen;
-                text-shadow: -2px 2px black, -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;;
+                text-shadow: -2px 2px black, -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;;
             }
 
             span.carat {
