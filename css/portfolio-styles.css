@@ -29,16 +29,22 @@
                 font-size: 1em;
             }
 
+            .textlink{
+                font-weight: bold;
+                text-shadow: -1px 1px black, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+            }
+
             .thumbnail{
                 width: 96px;
                 height: 96px;
                 background-image: url(img/hn_1.png);
-                background-repea]t: no-repeat;
+                background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
                 display: inline-block;
                 margin-right: 5px;
                 border: none;
+                border-radius: 0px;
             }
             .thumbnail:hover, .thumbnail.active{
                 transform: translateY(-5%);
@@ -51,11 +57,13 @@
                 overflow: hidden;
                 padding: 0px;
                 margin: 5px;
+                border-radius: 0px;
                 background-image: url(img/hn_1.png);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
                 text-align: left;
+                border:none;
             }
 
             span.dropdownButton {
@@ -94,17 +102,20 @@
             .nav-pills
             {
                 font-family: Silkscreen;
+                font-weight: normal;
             }
             
             .nav-pills>li.active>a, 
             .nav-pills>li.active>a:hover, 
             .nav-pills>li.active>a:focus {
                 background-color: #9E7A76;
+                border-radius: 0px;
             }
 
             .nav>li>a:hover, .nav>li>a:focus {
                 text-decoration: none;
                 background-color: #6F5053;
+                border-radius: 0px;
             }
 
             #nav-lg-md {
@@ -152,6 +163,8 @@
             }
             .btn-social-icon{
                 margin-right: 5px;
+                border-radius: 0px;
+                border: none;
             }
 
         </style>
