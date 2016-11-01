@@ -109,8 +109,8 @@
 
                                     Featuring 3D art assets from Dillon DeSimone and additional code from Kelly Zhang.<br><br>
 
-                                    <a class ="textlink" href="https://bonbombs.itch.io/galdor">(download) <span class="fa fa-android"></span> <span class="fa fa-windows"></span></a><br>
-                                    <a class ="textlink" href="https://www.youtube.com/v/t5niuOeFE_Q">(360-degree video) <span class="fa fa-youtube"></span></a>
+                                    <a class="textlink" href="https://bonbombs.itch.io/galdor">(download) <span class="fa fa-android"></span> <span class="fa fa-windows"></span></a><br>
+                                    <a class="textlink" href="https://www.youtube.com/v/t5niuOeFE_Q">(360-degree video) <span class="fa fa-youtube"></span></a>
 
                                      <!-- Button trigger modal -->
                                     <div id="sms" class="links">
@@ -209,7 +209,7 @@
 
                                     Created as part of my Interactive Qualifying Project, which I enrolled in a year early as a sophomore at the behest of my partners Dillon DeSimone and Francesca Carletto-Leon. <br>
 
-                                    You can read <a class="textlink" href="https://web.wpi.edu/Pubs/E-project/Available/E-project-032515-023708/" target="_blank">the accompanying paper and postmortem</a>, courtesy of the Gordon Library, if you're interested in hearing about that.<br>
+                                    You can read <a class="textlink" href="https://web.wpi.edu/Pubs/E-project/Available/E-project-032515-023708/">the accompanying paper and postmortem</a>, courtesy of the Gordon Library, if you're interested in hearing about that.<br>
                                     <div id="overworld" class="links">
                                         <a href="img/overworld_1.png" class="thumbnail" style="background-image: url(img/overworld_1.png);" data-gallery="#blueimp-gallery-overworld"></a>
                                     </div>
@@ -380,6 +380,11 @@
                 $(document).ready(function() {
                     // run test on initial page load
                     checkSize();
+
+                     $('.textlink').each(function(i, obj) {
+                         obj.target = "_blank";
+                        });
+
                    // run test on resize of the window
                     $(window).resize(checkSize);
                 });
