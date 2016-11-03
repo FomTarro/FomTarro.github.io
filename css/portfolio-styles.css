@@ -3,7 +3,8 @@
             @font-face {
                 font-family: Silkscreen;
                 src: url(fonts/slkscre-webfont.woff2) format('woff2'),
-                url(fonts/slkscre-webfont.woff) format('woff');
+                url(fonts/slkscre-webfont.woff) format('woff'), 
+                url(fonts/silkscre-webfont.ttf) format ('ttf');
             }
 
             body {
