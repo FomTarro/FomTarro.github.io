@@ -1,173 +1,169 @@
-<style>
+    @font-face {
+        font-family: Silkscreen;
+        src: url(fonts/slkscre-webfont.woff) format('woff'), 
+        url(fonts/silkscre-webfont.ttf) format ('ttf');
+    }
 
-            @font-face {
-                font-family: Silkscreen;
-                src: url(fonts/slkscre-webfont.woff2) format('woff2'),
-                url(fonts/slkscre-webfont.woff) format('woff'), 
-                url(fonts/silkscre-webfont.ttf) format ('ttf');
-            }
+    body {
+        position: relative;
+    }
 
-            body {
-                position: relative;
-            }
+    nav {
+        margin: 0;
+    }
 
-            nav {
-                margin: 0;
-            }
+    h2 {
+        font-family: Silkscreen;
+        text-shadow: -2px 2px #000000, -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+    }
 
-            h2 {
-                font-family: Silkscreen;
-                text-shadow: -2px 2px #000000, -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
-            }
+    a {
+        color: #C3C3C3;
+    }
 
-            a {
-                color: #C3C3C3;
-            }
+    a:hover{
+        color: #C3C3C3;
+    }
 
-            a:hover{
-                color: #C3C3C3;
-            }
+    li{
+        font-size: 1em;
+    }
 
-            li{
-                font-size: 1em;
-            }
+    .textlink{
+        font-weight: bold;
+        text-shadow: -1px 1px black, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+    }
 
-            .textlink{
-                font-weight: bold;
-                text-shadow: -1px 1px black, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
-            }
+    .thumbnail{
+        width: 96px;
+        height: 96px;
+        background-image: url(img/hn_1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        display: inline-block;
+        margin-right: 5px;
+        border: none;
+        border-radius: 0px;
+    }
+    .thumbnail:hover, .thumbnail.active{
+        transform: translateY(-5%);
+    }
 
-            .thumbnail{
-                width: 96px;
-                height: 96px;
-                background-image: url(img/hn_1.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-                display: inline-block;
-                margin-right: 5px;
-                border: none;
-                border-radius: 0px;
-            }
-            .thumbnail:hover, .thumbnail.active{
-                transform: translateY(-5%);
-            }
+    .dropdown-btn {
+        background-color:  #472719;
+        width: 100%;
+        height: 10vw;
+        overflow: hidden;
+        padding: 0px;
+        margin: 5px;
+        border-radius: 0px;
+        background-image: url(img/hn_1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        text-align: left;
+        border:none;
+    }
 
-            .dropdown-btn {
-                background-color:  #472719;
-                width: 100%;
-                height: 10vw;
-                overflow: hidden;
-                padding: 0px;
-                margin: 5px;
-                border-radius: 0px;
-                background-image: url(img/hn_1.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-                text-align: left;
-                border:none;
-            }
+    span.dropdownButton {
+        font-size: 2.2vw;
+        position: relative;
+        top: 6.5vw;
+        padding: 10px;
+        font-family: Silkscreen;
+        text-shadow: -2px 2px black, -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;;
+    }
 
-            span.dropdownButton {
-                font-size: 2.2vw;
-                position: relative;
-                top: 6.5vw;
-                padding: 10px;
-                font-family: Silkscreen;
-                text-shadow: -2px 2px black, -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;;
-            }
+    span.carat {
+        display: none;
+    }
 
-            span.carat {
-                display: none;
-            }
+    .active > a > span.carat {
+        display: inline-block;
+    }
 
-            .active > a > span.carat {
-                display: inline-block;
-            }
+    .navbar-inverse {
+        background-color: #472719;
+    }
 
-            .navbar-inverse {
-                background-color: #472719;
-            }
+    .navbar-inverse .navbar-toggle {
+        border-color: dimgray;
+    }
 
-            .navbar-inverse .navbar-toggle {
-                border-color: dimgray;
-            }
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: dimgray;
+    }
 
-            .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-                border-color: dimgray;
-            }
+    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+        background-color:  #6F5053;
+    }
 
-            .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-                background-color:  #6F5053;
-            }
+    .nav-pills
+    {
+        font-family: Silkscreen;
+        font-weight: normal;
+    }
+    
+    .nav-pills>li.active>a, 
+    .nav-pills>li.active>a:hover, 
+    .nav-pills>li.active>a:focus {
+        background-color: #9E7A76;
+        border-radius: 0px;
+    }
 
-            .nav-pills
-            {
-                font-family: Silkscreen;
-                font-weight: normal;
-            }
-            
-            .nav-pills>li.active>a, 
-            .nav-pills>li.active>a:hover, 
-            .nav-pills>li.active>a:focus {
-                background-color: #9E7A76;
-                border-radius: 0px;
-            }
+    .nav>li>a:hover, .nav>li>a:focus {
+        text-decoration: none;
+        background-color: #6F5053;
+        border-radius: 0px;
+    }
 
-            .nav>li>a:hover, .nav>li>a:focus {
-                text-decoration: none;
-                background-color: #6F5053;
-                border-radius: 0px;
-            }
+    #nav-lg-md {
+        position: fixed;
+        height: 100%;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+    }
 
-            #nav-lg-md {
-                position: fixed;
-                height: 100%;
-                padding-top: 10vw;
-                padding-bottom: 10vw;
-            }
+    #logoimg {
+        width: 100%;
+    }
 
-            #logoimg {
-                width: 100%;
-            }
+    .tab-content {
+        margin: 0;
+        padding: 0;
+    }
+    .tabpane {
+        /*min-height: 25vw;*/
+        height: auto;
+        padding: 64px;
+        padding-top: 32px;
+        background-color: #9E7A76;
+    }
+    .tabpane:nth-child(2n){
+        background-color: #6F5053;
+    }
 
-            .tab-content {
-                margin: 0;
-                padding: 0;
-            }
-            .tabpane {
-                /*min-height: 25vw;*/
-                height: auto;
-                padding: 64px;
-                padding-top: 32px;
-                background-color: #9E7A76;
-            }
-            .tabpane:nth-child(2n){
-                background-color: #6F5053;
-            }
+    .footer {
+        padding: 2vw;
+        min-height: 20vh;
+        background-color: #2222222;
+    }
 
-            .footer {
-                padding: 2vw;
-                min-height: 20vh;
-                background-color: #2222222;
-            }
+    .center {
+        width: 50%;
+    }
 
-            .center {
-                width: 50%;
-            }
+    .secret{
+        display: none;
+    }
 
-            .secret{
-                display: none;
-            }
+    .silkscreen{
+        font-family: Silkscreen;
+    }
+    .btn-social-icon{
+        margin-right: 5px;
+        border-radius: 0px;
+        border: none;
+    }
 
-            .silkscreen{
-                font-family: Silkscreen;
-            }
-            .btn-social-icon{
-                margin-right: 5px;
-                border-radius: 0px;
-                border: none;
-            }
-
-        </style>
