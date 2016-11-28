@@ -12,9 +12,12 @@
         margin: 0;
     }
 
-    h2 {
+    h2, h3 {
         font-family: Silkscreen;
         text-shadow: -2px 2px #000000, -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+    }
+    h3 {
+        font-size: 1.5em;
     }
 
     a {
@@ -50,20 +53,21 @@
         transform: translateY(-5%);
     }
 
-    .dropdown-btn {
+    .dropdown-btn, .dropdown-btn:hover {
         background-color:  #472719;
         width: 100%;
         height: 10vw;
         overflow: hidden;
         padding: 0px;
         margin: 5px;
-        border-radius: 0px;
+        border-radius: 1px;
+        border-color: black;
         background-image: url(img/hn_1.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         text-align: left;
-        border:none;
+        /*border:none;*/
     }
 
     span.dropdownButton {
