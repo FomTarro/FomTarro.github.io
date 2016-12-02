@@ -1,6 +1,7 @@
     @font-face {
         font-family: Silkscreen;
         src: url(fonts/slkscre-webfont.woff) format('woff'), 
+        url(fonts/slkscre-webfont.woff2) format('woff2'), 
         url(fonts/silkscre-webfont.ttf) format ('ttf');
     }
 
@@ -14,7 +15,7 @@
 
     h2, h3 {
         font-family: Silkscreen;
-        text-shadow: -2px 2px #000000, -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+        text-shadow: -2px 2px #000000, -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
     h3 {
         font-size: 1.5em;
@@ -34,7 +35,7 @@
 
     .textlink{
         font-weight: bold;
-        text-shadow: -1px 1px black, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+        text-shadow: -1px 1px black, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
     .textlink:focus{
         color: white;
@@ -79,7 +80,7 @@
         top: 6.5vw;
         padding: 10px;
         font-family: Silkscreen;
-        text-shadow: -2px 2px black, -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;;
+        text-shadow: -2px 2px black, -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     }
 
     span.carat {
