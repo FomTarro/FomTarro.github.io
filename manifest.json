@@ -1,0 +1,10 @@
+﻿{
+    "short_name": "TF",
+    "name": "Tom Farro Dot Com",
+    "start_url": "http://tomfarro.com",
+    "display": "standalone",
+
+    "background_color": "#4F1F19",
+    "theme_color": "#4F1F19",
+    ]
+}
